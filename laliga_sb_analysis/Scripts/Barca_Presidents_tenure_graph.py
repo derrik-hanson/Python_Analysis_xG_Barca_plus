@@ -9,28 +9,27 @@ Created on Fri Nov 12 17:03:57 2021
 import plotly.express as px
 import pandas as pd
 
-player_tenure = [
-    {'prez_name': 'Lionel Messi', 'start':'2004-06-01' ,'end':'2021-06-01'},
-    {'prez_name': 'Zlatan Ibrahimovic', 'start':'2009-07-27' ,'end':'2010-08-28'},
-    {'prez_name': 'Ronaldinho Gaucho', 'start':'2003-07-19' ,'end':'2008-07-19'},
-    {'prez_name': 'Luis Suarez', 'start':'2014-07-11' ,'end':'2021-08-31'},
-    {'prez_name': 'Antoine Griezmann', 'start':'2019-07-14' ,'end':'2020-09-25'},
-    {'prez_name': 'Samuel Eto\'o', 'start': '2004-08-26' ,'end': '2009-07-27'}
+president_tenure = [
+    {'prez_name': 'Joan Laporta', 'start':'2003-06-15' ,'end':'2010-07-01'},
+    {'prez_name': 'Joan Laporta', 'start':'2021-03-07' ,'end':'2021-11-12'},
+    {'prez_name': 'Sandro Rosell', 'start':'2010-07-01' ,'end':'2014-01-23'},
+    {'prez_name': 'Josep Bartomeu', 'start':'2014-01-23' ,'end':'2020-10-27'},
+    {'prez_name': 'Carles Tusquets', 'start':'2020-10-29' ,'end':'2021-03-07'},
     ]
 
 
 # load DataFrame
-df = pd.DataFrame(player_tenure)
+df = pd.DataFrame(president_tenure)
 
 
 # Create Gantt Plot
 fig = px.timeline(df, x_start="start", x_end="end", y="prez_name",
                   labels = {
-                      'player_name': 'Player Name'}
+                      'prez_name': 'President Name'}
                   )
 fig.update_layout(
     title={
-        'text': "Barcelona Player Tenures",
+        'text': "Barcelona President Tenures",
         'y':0.95,
         'x':0.5,
         'xanchor': 'center',
