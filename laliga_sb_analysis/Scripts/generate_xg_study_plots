@@ -1,0 +1,227 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Nov 11 01:06:38 2021
+
+@author: Derrik Hanson
+"""
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+# -----------------------
+# import preprocessed data
+barca_shooters = pd.read_csv('laliga_data/barca_players_with_shots.csv')
+barca_shots = pd.read_csv('laliga_data/barca_shots_df.csv')
+
+# -----------------------
+# prepare shots by player
+player_shots_df_dict = {}
+for player in barca_shooters['player_name']:
+    player_mask = barca_shots['player_name'] == player
+    player_shots_df_dict[player] = barca_shots[player_mask]
+
+p_interest = ['Lionel Andrés Messi Cuccittini',
+              'Antoine Griezmann',
+              'Neymar da Silva Santos Junior',
+              'Ronaldo de Assis Moreira',
+              'Samuel Eto"o Fils',
+              'Luis Alberto Suárez Díaz',
+              'Zlatan Ibrahimović'
+              ]
+
+#['shot_outcome_name']=='Goal'
+for player in p_interest:
+    player_tempdf = player_shots_df_dict[player]
+    data = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts, bins = np.histogram(data, bins=10, range=(0.0,1.0))
+    plt.hist(bins[:-1], bins, weights=counts)
+    plt.title("All Shots: " + player)
+    plt.show()
+
+
+# goals
+for player in p_interest:
+    player_tempdf = player_shots_df_dict[player]
+    goal_mask = player_tempdf['shot_outcome_name']=='Goal'
+    player_tempdf = player_tempdf[goal_mask].copy()
+    
+    data = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts, bins = np.histogram(data, bins=10, range=(0.0,1.0))
+    plt.hist(bins[:-1], bins, weights=counts, facecolor='g')
+    plt.title("Goals: " + player)
+    plt.xlabel('xG')
+    plt.ylabel('count')
+    plt.show()
+
+
+# goals over shots
+for player in p_interest:
+    player_tempdf = player_shots_df_dict[player]
+    
+    #all shots
+    data = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts, bins = np.histogram(data, bins=10, range=(0.0,1.0))
+    plt.hist(bins[:-1], bins, weights=counts)
+
+    
+    #goals 
+    player_tempdf = player_shots_df_dict[player]
+    goal_mask = player_tempdf['shot_outcome_name']=='Goal'
+    player_tempdf = player_tempdf[goal_mask].copy()
+    
+    data = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts, bins = np.histogram(data, bins=10, range=(0.0,1.0))
+    plt.hist(bins[:-1], bins, weights=counts, facecolor='g')
+    
+    # plot properties
+    plt.title("Goals and Shots: " + player)
+    plt.xlabel('xG')
+    plt.ylabel('count')
+    plt.show()
+    
+# goals next to actual expected goals 
+
+
+# show the bars for each side by side
+for player in p_interest:
+    player_tempdf = player_shots_df_dict[player]
+    
+    #all shots
+    data_s = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts_s, bins = np.histogram(data, bins=10, range=(0.0,1.0))
+    #plt.hist(bins[:-1], bins, weights=counts)
+
+    
+    #goals 
+    player_tempdf = player_shots_df_dict[player]
+    goal_mask = player_tempdf['shot_outcome_name']=='Goal'
+    player_tempdf = player_tempdf[goal_mask].copy()
+    
+    data_g = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts_g, bins = np.histogram(data, bins=10, range=(0.0,1.0))
+    #plt.hist(bins[:-1], bins, weights=counts, facecolor='g')
+    
+    plt.style.use('seaborn-deep')
+    plt.title(player)
+    plt.hist([data_s, data_g], bins,label=['all shots', 'goals'])
+    plt.legend(loc='upper right')
+    plt.show()
+
+# ---------------------------
+# plotting sum of expected goals
+# bar chart version 
+player_totals_dict = {}
+for player in p_interest:
+    player_tempdf = player_shots_df_dict[player]
+    
+    no_pens = True
+    if no_pens:
+        no_pens_mask = player_tempdf['shot_type_name'] != 'Penalty'
+        player_tempdf= player_tempdf[no_pens_mask].copy()
+
+    #all shots
+    data_s = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts_s, bins = np.histogram(data_s, bins=10, weights=data_s,range=(0.0,1.0))
+    #plt.hist(bins[:-1], bins, weights=counts)
+
+    
+    #goals 
+    #player_tempdf = player_shots_df_dict[player]
+    goal_mask = player_tempdf['shot_outcome_name']=='Goal'
+    player_tempdf = player_tempdf[goal_mask].copy()
+      
+    data_g = player_tempdf['shot_statsbomb_xg'].to_list()
+    counts_g, bins = np.histogram(data_g, bins=10, range=(0.0,1.0))
+    
+    
+    
+    # total xg goal dict value
+    player_totals_dict[player] = {'cum_xg': counts_s.sum(),
+                                  'cum_goals': counts_g.sum()
+                                  }
+    
+    #--- setting up bar plot
+    labels = [str(round(i,1)) for i in bins[1:]]
+    
+    x = np.arange(len(labels))  # the label locations
+    width = 0.35  # the width of the bars
+    
+    fig, ax = plt.subplots()
+    rects1 = ax.bar(x - width*3/2, counts_g, width, label='Goals')
+    rects2 = ax.bar(x - width/2, counts_s, width, label='xG')
+    
+    # Add some text for labels, title and custom x-axis tick labels, etc.
+    ax.set_ylabel('Goals')
+    if no_pens:
+        ax.set_title(player + '\n(no penalties)')
+    else:
+        ax.set_title(player)
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
+    ax.set_xlabel('xG bin')
+    ax.legend()
+    
+    #ax.bar_label(rects1, padding=3)
+    #ax.bar_label(rects2, padding=3)
+    
+    fig.tight_layout()
+    plt.show()
+    
+# ----------------------    
+# !!! This is Great
+# ----------------------
+# Generate final plot comparing overall xG Performance by player
+goals_temp = [player_totals_dict[p]['cum_goals']for p in player_totals_dict]
+xg_temp = [player_totals_dict[p]['cum_xg']for p in player_totals_dict]
+xg_converted = [goals_temp[i]/xg_temp[i]-1 for i in range(0,len(goals_temp))]
+
+# ----------------------
+# setting up bar plot for total values
+labels = [p for p in p_interest]
+
+x = np.arange(len(labels))  # the label locations
+width = 0.35  # the width of the bars
+
+fig, ax = plt.subplots()
+goals_rects = ax.barh(x - width/2, goals_temp, width)
+xg_rect = ax.barh(x + width/2, xg_temp, width)
+
+# Add some text for labels, title and custom x-axis tick labels, etc.
+ax.set_xlabel('Goals')
+ax.set_title('All Players')
+ax.set_yticks(x)
+ax.set_yticklabels(labels)
+ax.legend()
+
+#ax.bar_label(rects1, padding=3)
+#ax.bar_label(rects2, padding=3)
+
+fig.tight_layout()
+plt.show()
+    
+# -------------------
+# expected goals Conversion Scatter Plot
+labels = [p for p in p_interest]
+x = np.arange(len(labels))  # the label locations
+width = 0.35  # the width of the bars
+
+fig, ax = plt.subplots()
+conv_rects = ax.barh(x - width/2, xg_converted, width)
+
+
+# Add some text for labels, title and custom x-axis tick labels, etc.
+ax.set_xlabel('(total Goals)/ (total xG)')
+ax.set_title('Actual Goals compared to xG')
+ax.set_yticks(x)
+ax.set_yticklabels(labels)
+ax.legend()
+
+#ax.bar_label(rects1, padding=3)
+#ax.bar_label(rects2, padding=3)
+
+fig.tight_layout()
+plt.show()
+
+   
+# bin_means = (np.histogram(data_s, bins, weights=data_s)[0] /
+#              np.histogram(data_s, bins)[0])

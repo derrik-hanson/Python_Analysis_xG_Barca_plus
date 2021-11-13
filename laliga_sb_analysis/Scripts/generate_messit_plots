@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  9 16:02:05 2021
+
+@author: Derrik Hanson
+"""
+import pickle
+import numpy as np 
+import pandas as pd
+
+import DhEventPlotTools as Dhplt
+
+laliga_shots_by_year = pickle.load(open('laliga_shots_df_dict.p', "rb"))
+
+player_name = "Xavier Hernández Creus"
+#player_name = 'Lionel Andrés Messi Cuccittini'
+
+# plot all shots
+for year, df in laliga_shots_by_year.items():
+
+    year_disp = year[0:4] + year[5:]
+    Dhplt.plot_shots_player(df, player_name, year_disp)
+        
+# goals with xG  indicated
+for year, df in laliga_shots_by_year.items():
+
+    year_disp = year[0:4] + '-' + year[5:]
+    Dhplt.plot_goals_player(df, player_name, year_disp)
+    
+    
+    
+    
+    

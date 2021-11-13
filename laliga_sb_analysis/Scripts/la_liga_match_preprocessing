@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  9 11:15:24 2021
+
+@author: Derrik Hanson
+"""
+
+import json 
+import pandas as pd
+# -------------
+comp_id_in = 11
+# -------------
+
+
+# -------------
+# get laliga seasons data
+seasonsfile = "laliga_sb_analysis/laliga_data/laliga_seasons.json"
+with open(seasonsfile) as laliga_file:
+    laliga_seasons = json.load(laliga_file)
+
+dataf_collector = []
+#--------------
+# Generate Data frames for match ids with barcelona
+for temp_season_id in laliga_seasons['seasons'].keys():
+    
+    
+    # find all barcelona matches
+    with open(f'statsbomby/data/matches/{comp_id_in}/{temp_season_id}.json') as f:
+                temp_matches = json.load(f)
+    
+    match_data = []
+    for match in temp_matches:
+    
+        home_team = match['home_team']['home_team_name']
+        away_team = match['away_team']['away_team_name']
+        match_id = match['match_id']
+        match_date =match['match_date']
+        if (home_team == 'Barcelona') or (away_team == 'Barcelona'):
+            has_barca = True
+        else:
+            has_barca = False
+        
+        match_data.append({
+            'match_id' : match_id,
+            'barca_played': has_barca,
+            'home_team': home_team,
+            'away_team': away_team,
+            'match_date': match_date, 
+            'season': match['season']['season_name']
+            })
+    
+      
+    # Creates DataFrame.
+    df = pd.DataFrame(match_data)
+      
+    # add this season to the season_dataframe
+    dataf_collector.append(df)
+
+# ------------
+# Create one dataframe for all league match data
+all_matches_df = pd.concat(dataf_collector)
+#all_matches_df.sort_values('match_date', ascending=False)
+
+# Save dataframe to a file for later access
+fsavepath = 'laliga_sb_analysis/laliga_data/matches_laliga.csv'
+all_matches_df.to_csv(fsavepath, index=False)
+
+# Does this data set only include barca matches
+print(all_matches_df.query('barca_played == False'))
+
+
+    
+    
+    

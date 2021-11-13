@@ -1,0 +1,486 @@
+match_id,barca_played,home_team,away_team,match_date,season
+303731,True,Barcelona,Eibar,2020-02-22,2019/2020
+303532,True,Barcelona,Leganés,2020-06-16,2019/2020
+303516,True,Celta Vigo,Barcelona,2020-06-27,2019/2020
+303596,True,Barcelona,Real Madrid,2019-12-18,2019/2020
+303430,True,Barcelona,Villarreal,2019-09-24,2019/2020
+303725,True,Villarreal,Barcelona,2020-07-05,2019/2020
+303504,True,Levante,Barcelona,2019-11-02,2019/2020
+303451,True,Barcelona,Mallorca,2019-12-07,2019/2020
+303664,True,Real Sociedad,Barcelona,2019-12-14,2019/2020
+303682,True,Barcelona,Levante,2020-02-02,2019/2020
+303400,True,Valencia,Barcelona,2020-01-25,2019/2020
+303634,True,Barcelona,Osasuna,2020-07-16,2019/2020
+303421,True,Deportivo Alavés,Barcelona,2020-07-19,2019/2020
+303493,True,Barcelona,Athletic Bilbao,2020-06-23,2019/2020
+303680,True,Real Valladolid,Barcelona,2020-07-11,2019/2020
+303479,True,Barcelona,Real Sociedad,2020-03-07,2019/2020
+303615,True,Barcelona,Espanyol,2020-07-08,2019/2020
+303696,True,Barcelona,Atlético Madrid,2020-06-30,2019/2020
+303487,True,Barcelona,Celta Vigo,2019-11-09,2019/2020
+303600,True,Barcelona,Real Valladolid,2019-10-29,2019/2020
+303548,True,Mallorca,Barcelona,2020-06-13,2019/2020
+303652,True,Espanyol,Barcelona,2020-01-04,2019/2020
+303674,True,Sevilla,Barcelona,2020-06-19,2019/2020
+303470,True,Real Madrid,Barcelona,2020-03-01,2019/2020
+303700,True,Eibar,Barcelona,2019-10-19,2019/2020
+303707,True,Real Betis,Barcelona,2020-02-09,2019/2020
+303666,True,Granada,Barcelona,2019-09-21,2019/2020
+303715,True,Leganés,Barcelona,2019-11-23,2019/2020
+303377,True,Barcelona,Getafe,2020-02-15,2019/2020
+303524,True,Atlético Madrid,Barcelona,2019-12-01,2019/2020
+303517,True,Barcelona,Deportivo Alavés,2019-12-21,2019/2020
+303610,True,Barcelona,Granada,2020-01-19,2019/2020
+303473,True,Barcelona,Sevilla,2019-10-06,2019/2020
+15998,True,Leganés,Barcelona,2018-09-26,2018/2019
+16029,True,Barcelona,Sevilla,2018-10-20,2018/2019
+16073,True,Atlético Madrid,Barcelona,2018-11-24,2018/2019
+16086,True,Espanyol,Barcelona,2018-12-08,2018/2019
+16190,True,Sevilla,Barcelona,2019-02-23,2018/2019
+16109,True,Barcelona,Celta Vigo,2018-12-22,2018/2019
+16120,True,Getafe,Barcelona,2019-01-06,2018/2019
+16182,True,Barcelona,Real Valladolid,2019-02-16,2018/2019
+16215,True,Real Betis,Barcelona,2019-03-17,2018/2019
+16173,True,Athletic Bilbao,Barcelona,2019-02-10,2018/2019
+16265,True,Barcelona,Real Sociedad,2019-04-20,2018/2019
+15946,True,Barcelona,Deportivo Alavés,2018-08-18,2018/2019
+16157,True,Barcelona,Valencia,2019-02-02,2018/2019
+16136,True,Barcelona,Leganés,2019-01-20,2018/2019
+16248,True,Barcelona,Atlético Madrid,2019-04-06,2018/2019
+16056,True,Barcelona,Real Betis,2018-11-11,2018/2019
+16289,True,Barcelona,Levante,2019-04-27,2018/2019
+16079,True,Barcelona,Villarreal,2018-12-02,2018/2019
+16149,True,Girona,Barcelona,2019-01-27,2018/2019
+16275,True,Deportivo Alavés,Barcelona,2019-04-23,2018/2019
+15973,True,Barcelona,Huesca,2018-09-02,2018/2019
+16317,True,Eibar,Barcelona,2019-05-19,2018/2019
+16131,True,Barcelona,Eibar,2019-01-13,2018/2019
+16205,True,Barcelona,Rayo Vallecano,2019-03-09,2018/2019
+16095,True,Levante,Barcelona,2018-12-16,2018/2019
+16306,True,Barcelona,Getafe,2019-05-12,2018/2019
+16010,True,Barcelona,Athletic Bilbao,2018-09-29,2018/2019
+15986,True,Barcelona,Girona,2018-09-23,2018/2019
+16240,True,Villarreal,Barcelona,2019-04-02,2018/2019
+15978,True,Real Sociedad,Barcelona,2018-09-15,2018/2019
+16023,True,Valencia,Barcelona,2018-10-07,2018/2019
+16196,True,Real Madrid,Barcelona,2019-03-02,2018/2019
+15956,True,Real Valladolid,Barcelona,2018-08-25,2018/2019
+16231,True,Barcelona,Espanyol,2019-03-30,2018/2019
+9575,True,Barcelona,Real Betis,2017-08-20,2017/2018
+9928,True,Barcelona,Villarreal,2018-05-09,2017/2018
+9609,True,Barcelona,Eibar,2017-09-19,2017/2018
+9736,True,Real Madrid,Barcelona,2017-12-23,2017/2018
+9742,True,Barcelona,Levante,2018-01-07,2017/2018
+9855,True,Barcelona,Athletic Bilbao,2018-03-18,2017/2018
+9765,True,Real Betis,Barcelona,2018-01-21,2017/2018
+9636,True,Barcelona,Las Palmas,2017-10-01,2017/2018
+9799,True,Eibar,Barcelona,2018-02-17,2017/2018
+9880,True,Barcelona,Valencia,2018-04-14,2017/2018
+9924,True,Barcelona,Real Madrid,2018-05-06,2017/2018
+9661,True,Athletic Bilbao,Barcelona,2017-10-28,2017/2018
+9592,True,Barcelona,Espanyol,2017-09-09,2017/2018
+9870,True,Barcelona,Leganés,2018-04-07,2017/2018
+9783,True,Espanyol,Barcelona,2018-02-04,2017/2018
+9700,True,Barcelona,Celta Vigo,2017-12-02,2017/2018
+9860,True,Sevilla,Barcelona,2018-03-31,2017/2018
+9695,True,Valencia,Barcelona,2017-11-26,2017/2018
+9794,True,Barcelona,Getafe,2018-02-11,2017/2018
+9717,True,Villarreal,Barcelona,2017-12-10,2017/2018
+9673,True,Barcelona,Sevilla,2017-11-04,2017/2018
+9650,True,Barcelona,Málaga,2017-10-21,2017/2018
+9620,True,Girona,Barcelona,2017-09-23,2017/2018
+9827,True,Las Palmas,Barcelona,2018-03-01,2017/2018
+9837,True,Barcelona,Atlético Madrid,2018-03-04,2017/2018
+9912,True,Deportivo La Coruna,Barcelona,2018-04-29,2017/2018
+9811,True,Barcelona,Girona,2018-02-24,2017/2018
+9642,True,Atlético Madrid,Barcelona,2017-10-14,2017/2018
+9774,True,Barcelona,Deportivo Alavés,2018-01-28,2017/2018
+9602,True,Getafe,Barcelona,2017-09-16,2017/2018
+9948,True,Barcelona,Real Sociedad,2018-05-20,2017/2018
+9682,True,Leganés,Barcelona,2017-11-18,2017/2018
+9581,True,Deportivo Alavés,Barcelona,2017-08-26,2017/2018
+9726,True,Barcelona,Deportivo La Coruna,2017-12-17,2017/2018
+9754,True,Real Sociedad,Barcelona,2018-01-14,2017/2018
+9889,True,Celta Vigo,Barcelona,2018-04-17,2017/2018
+266989,True,Sevilla,Barcelona,2016-11-06,2016/2017
+266357,True,Osasuna,Barcelona,2016-12-10,2016/2017
+267569,True,Real Madrid,Barcelona,2017-04-23,2016/2017
+267212,True,Leganés,Barcelona,2016-09-17,2016/2017
+266669,True,Barcelona,Deportivo Alavés,2016-09-10,2016/2017
+266892,True,Athletic Bilbao,Barcelona,2016-08-28,2016/2017
+267220,True,Barcelona,Atlético Madrid,2016-09-21,2016/2017
+267670,True,Barcelona,Real Betis,2016-08-20,2016/2017
+266516,True,Real Betis,Barcelona,2017-01-29,2016/2017
+267039,True,Las Palmas,Barcelona,2017-05-14,2016/2017
+266477,True,Villarreal,Barcelona,2017-01-08,2016/2017
+267101,True,Barcelona,Osasuna,2017-04-26,2016/2017
+266440,True,Barcelona,Valencia,2017-03-19,2016/2017
+266033,True,Valencia,Barcelona,2016-10-22,2016/2017
+267660,True,Deportivo La Coruna,Barcelona,2017-03-12,2016/2017
+266273,True,Deportivo Alavés,Barcelona,2017-02-11,2016/2017
+267395,True,Barcelona,Las Palmas,2017-01-14,2016/2017
+266874,True,Barcelona,Athletic Bilbao,2017-02-04,2016/2017
+266731,True,Eibar,Barcelona,2017-01-22,2016/2017
+266528,True,Barcelona,Espanyol,2016-12-18,2016/2017
+266280,True,Barcelona,Sevilla,2017-04-05,2016/2017
+267432,True,Barcelona,Eibar,2017-05-21,2016/2017
+267076,True,Barcelona,Real Madrid,2016-12-03,2016/2017
+267590,True,Málaga,Barcelona,2017-04-08,2016/2017
+267373,True,Barcelona,Real Sociedad,2017-04-15,2016/2017
+267077,True,Espanyol,Barcelona,2017-04-29,2016/2017
+266952,True,Barcelona,Villarreal,2017-05-06,2016/2017
+267464,True,Atlético Madrid,Barcelona,2017-02-26,2016/2017
+266299,True,Barcelona,Celta Vigo,2017-03-04,2016/2017
+266191,True,Real Sociedad,Barcelona,2016-11-27,2016/2017
+265952,True,Barcelona,Sporting Gijón,2017-03-01,2016/2017
+267492,True,Barcelona,Deportivo La Coruna,2016-10-15,2016/2017
+267596,True,Barcelona,Leganés,2017-02-19,2016/2017
+267058,True,Barcelona,Granada,2016-10-29,2016/2017
+266498,True,Barcelona,Getafe,2016-03-12,2015/2016
+266986,True,Real Betis,Barcelona,2016-04-30,2015/2016
+267533,True,Barcelona,Real Madrid,2016-04-02,2015/2016
+266310,True,Deportivo La Coruna,Barcelona,2016-04-20,2015/2016
+267576,True,Barcelona,Atlético Madrid,2016-01-30,2015/2016
+266653,True,Rayo Vallecano,Barcelona,2016-03-03,2015/2016
+265944,True,Barcelona,Sporting Gijón,2016-04-23,2015/2016
+265894,True,Málaga,Barcelona,2016-01-23,2015/2016
+265958,True,Barcelona,Espanyol,2016-05-08,2015/2016
+267611,True,Barcelona,Las Palmas,2015-09-26,2015/2016
+267422,True,Barcelona,Málaga,2015-08-29,2015/2016
+266236,True,Athletic Bilbao,Barcelona,2015-08-23,2015/2016
+267274,True,Valencia,Barcelona,2015-12-05,2015/2016
+266961,True,Barcelona,Deportivo La Coruna,2015-12-12,2015/2016
+266885,True,Barcelona,Real Sociedad,2015-11-28,2015/2016
+266815,True,Sporting Gijón,Barcelona,2016-02-17,2015/2016
+267506,True,Granada,Barcelona,2016-05-14,2015/2016
+266664,True,Real Sociedad,Barcelona,2016-04-09,2015/2016
+266106,True,Villarreal,Barcelona,2016-03-20,2015/2016
+266670,True,Espanyol,Barcelona,2016-01-02,2015/2016
+266149,True,Barcelona,Athletic Bilbao,2016-01-17,2015/2016
+266620,True,Barcelona,Granada,2016-01-09,2015/2016
+266056,True,Eibar,Barcelona,2016-03-06,2015/2016
+267327,True,Barcelona,Real Betis,2015-12-30,2015/2016
+266166,True,Atlético Madrid,Barcelona,2015-09-12,2015/2016
+266160,True,Levante,Barcelona,2016-02-07,2015/2016
+265839,True,Barcelona,Sevilla,2016-02-28,2015/2016
+266424,True,Real Madrid,Barcelona,2015-11-21,2015/2016
+266467,True,Celta Vigo,Barcelona,2015-09-23,2015/2016
+267273,True,Las Palmas,Barcelona,2016-02-20,2015/2016
+266490,True,Barcelona,Levante,2015-09-20,2015/2016
+266254,True,Barcelona,Celta Vigo,2016-02-14,2015/2016
+266557,True,Barcelona,Valencia,2016-04-17,2015/2016
+265835,True,Barcelona,Sevilla,2014-11-22,2014/2015
+266838,True,Málaga,Barcelona,2014-09-24,2014/2015
+265963,True,Barcelona,Getafe,2015-04-28,2014/2015
+266117,True,Barcelona,Granada,2014-09-27,2014/2015
+266916,True,Barcelona,Rayo Vallecano,2015-03-08,2014/2015
+267183,True,Barcelona,Real Madrid,2015-03-22,2014/2015
+267197,True,Barcelona,Deportivo La Coruna,2015-05-23,2014/2015
+70264,True,Getafe,Barcelona,2014-12-13,2014/2015
+70273,True,Barcelona,Athletic Bilbao,2014-09-13,2014/2015
+267301,True,Barcelona,Celta Vigo,2014-11-01,2014/2015
+265896,True,Barcelona,Eibar,2014-10-18,2014/2015
+265866,True,Córdoba,Barcelona,2015-05-02,2014/2015
+267400,True,Barcelona,Almería,2015-04-08,2014/2015
+266406,True,Villarreal,Barcelona,2014-08-31,2014/2015
+267085,True,Real Madrid,Barcelona,2014-10-25,2014/2015
+267561,True,Rayo Vallecano,Barcelona,2014-10-04,2014/2015
+266148,True,Barcelona,Málaga,2015-02-21,2014/2015
+266045,True,Barcelona,Real Sociedad,2015-05-09,2014/2015
+70303,True,Barcelona,Atlético Madrid,2015-01-11,2014/2015
+266240,True,Real Sociedad,Barcelona,2015-01-04,2014/2015
+267597,True,Barcelona,Villarreal,2015-02-01,2014/2015
+266794,True,Elche,Barcelona,2015-01-24,2014/2015
+267343,True,Granada,Barcelona,2015-02-28,2014/2015
+266631,True,Atlético Madrid,Barcelona,2015-05-17,2014/2015
+266320,True,Barcelona,Espanyol,2014-12-07,2014/2015
+266230,True,Deportivo La Coruna,Barcelona,2015-01-18,2014/2015
+266525,True,Barcelona,Valencia,2015-04-18,2014/2015
+266560,True,Valencia,Barcelona,2014-11-30,2014/2015
+266846,True,Barcelona,Córdoba,2014-12-20,2014/2015
+266531,True,Espanyol,Barcelona,2015-04-25,2014/2015
+266921,True,Barcelona,Elche,2014-08-24,2014/2015
+267499,True,Almería,Barcelona,2014-11-08,2014/2015
+266741,True,Barcelona,Levante,2015-02-15,2014/2015
+266871,True,Athletic Bilbao,Barcelona,2015-02-08,2014/2015
+266967,True,Eibar,Barcelona,2015-03-14,2014/2015
+266929,True,Celta Vigo,Barcelona,2015-04-05,2014/2015
+266770,True,Levante,Barcelona,2014-09-21,2014/2015
+266142,True,Sevilla,Barcelona,2015-04-11,2014/2015
+267368,True,Barcelona,Real Betis,2014-04-05,2013/2014
+70301,True,Barcelona,Sevilla,2013-09-14,2013/2014
+70298,True,Valencia,Barcelona,2013-09-01,2013/2014
+70302,True,Rayo Vallecano,Barcelona,2013-09-21,2013/2014
+70291,True,Barcelona,Málaga,2014-01-26,2013/2014
+267138,True,Granada,Barcelona,2014-04-12,2013/2014
+267520,True,Barcelona,Real Sociedad,2013-09-24,2013/2014
+70289,True,Villarreal,Barcelona,2014-04-27,2013/2014
+266066,True,Barcelona,Almería,2014-03-02,2013/2014
+267675,True,Sevilla,Barcelona,2014-02-09,2013/2014
+70288,True,Levante,Barcelona,2014-01-19,2013/2014
+266074,True,Barcelona,Osasuna,2014-03-16,2013/2014
+267567,True,Barcelona,Athletic Bilbao,2014-04-20,2013/2014
+266201,True,Elche,Barcelona,2014-05-11,2013/2014
+266274,True,Barcelona,Celta Vigo,2014-03-26,2013/2014
+70293,True,Barcelona,Real Madrid,2013-10-26,2013/2014
+265918,True,Barcelona,Rayo Vallecano,2014-02-15,2013/2014
+70277,True,Barcelona,Levante,2013-08-18,2013/2014
+70283,True,Barcelona,Espanyol,2013-11-01,2013/2014
+70306,True,Espanyol,Barcelona,2014-03-29,2013/2014
+266256,True,Barcelona,Atlético Madrid,2014-05-17,2013/2014
+266613,True,Barcelona,Valencia,2014-02-01,2013/2014
+266491,True,Barcelona,Getafe,2014-05-03,2013/2014
+265830,True,Atlético Madrid,Barcelona,2014-01-11,2013/2014
+265857,True,Real Madrid,Barcelona,2014-03-23,2013/2014
+266883,True,Real Betis,Barcelona,2013-11-10,2013/2014
+266603,True,Real Valladolid,Barcelona,2014-03-08,2013/2014
+265837,True,Real Sociedad,Barcelona,2014-02-22,2013/2014
+266462,True,Osasuna,Barcelona,2013-10-19,2013/2014
+267192,True,Celta Vigo,Barcelona,2013-10-29,2013/2014
+266420,True,Almería,Barcelona,2013-09-28,2013/2014
+266015,True,Real Valladolid,Barcelona,2012-12-22,2012/2013
+70270,True,Barcelona,Granada,2012-09-22,2012/2013
+70281,True,Barcelona,Real Betis,2013-05-05,2012/2013
+70308,True,Barcelona,Celta Vigo,2012-11-03,2012/2013
+70282,True,Valencia,Barcelona,2013-02-03,2012/2013
+266724,True,Mallorca,Barcelona,2012-11-11,2012/2013
+70272,True,Real Madrid,Barcelona,2013-03-02,2012/2013
+70304,True,Deportivo La Coruna,Barcelona,2012-10-20,2012/2013
+70280,True,Levante,Barcelona,2012-11-25,2012/2013
+70296,True,Barcelona,Atlético Madrid,2012-12-16,2012/2013
+70297,True,Barcelona,Getafe,2013-02-10,2012/2013
+266433,True,Barcelona,Espanyol,2013-01-06,2012/2013
+70256,True,Celta Vigo,Barcelona,2013-03-30,2012/2013
+70259,True,Barcelona,Real Sociedad,2012-08-19,2012/2013
+70260,True,Barcelona,Osasuna,2013-01-27,2012/2013
+70263,True,Barcelona,Athletic Bilbao,2012-12-01,2012/2013
+70276,True,Rayo Vallecano,Barcelona,2012-10-27,2012/2013
+70287,True,Real Sociedad,Barcelona,2013-01-19,2012/2013
+70284,True,Atlético Madrid,Barcelona,2013-05-12,2012/2013
+70275,True,Sevilla,Barcelona,2012-09-29,2012/2013
+70286,True,Barcelona,Valencia,2012-09-02,2012/2013
+70309,True,Barcelona,Real Zaragoza,2012-11-17,2012/2013
+70300,True,Barcelona,Real Madrid,2012-10-07,2012/2013
+70295,True,Real Betis,Barcelona,2012-12-09,2012/2013
+70307,True,Barcelona,Rayo Vallecano,2013-03-17,2012/2013
+70305,True,Barcelona,Deportivo La Coruna,2013-03-09,2012/2013
+266827,True,Málaga,Barcelona,2013-01-13,2012/2013
+267502,True,Athletic Bilbao,Barcelona,2013-04-27,2012/2013
+70271,True,Barcelona,Sevilla,2013-02-23,2012/2013
+70294,True,Granada,Barcelona,2013-02-16,2012/2013
+70262,True,Osasuna,Barcelona,2012-08-26,2012/2013
+70292,True,Getafe,Barcelona,2012-09-15,2012/2013
+69328,True,Barcelona,Valencia,2012-02-19,2011/2012
+69329,True,Barcelona,Sevilla,2011-10-22,2011/2012
+70219,True,Real Zaragoza,Barcelona,2012-04-07,2011/2012
+69331,True,Barcelona,Real Zaragoza,2011-11-19,2011/2012
+69337,True,Atlético Madrid,Barcelona,2012-02-26,2011/2012
+69322,True,Racing Santander,Barcelona,2012-03-11,2011/2012
+69316,True,Barcelona,Real Sociedad,2012-02-04,2011/2012
+69332,True,Barcelona,Rayo Vallecano,2011-11-29,2011/2012
+69335,True,Málaga,Barcelona,2012-01-22,2011/2012
+69330,True,Athletic Bilbao,Barcelona,2011-11-06,2011/2012
+69297,True,Barcelona,Atlético Madrid,2011-09-24,2011/2012
+69325,True,Mallorca,Barcelona,2012-03-24,2011/2012
+69324,True,Barcelona,Real Madrid,2012-04-21,2011/2012
+70225,True,Barcelona,Granada,2012-03-20,2011/2012
+69293,True,Barcelona,Racing Santander,2011-10-15,2011/2012
+70223,True,Valencia,Barcelona,2011-09-21,2011/2012
+69333,True,Barcelona,Levante,2011-12-03,2011/2012
+69264,True,Real Sociedad,Barcelona,2011-09-10,2011/2012
+69343,True,Barcelona,Getafe,2012-04-10,2011/2012
+69340,True,Barcelona,Málaga,2012-05-02,2011/2012
+69265,True,Sporting Gijón,Barcelona,2011-10-02,2011/2012
+69319,True,Real Betis,Barcelona,2012-05-12,2011/2012
+69334,True,Real Madrid,Barcelona,2011-12-10,2011/2012
+69327,True,Barcelona,Real Betis,2012-01-15,2011/2012
+69315,True,Getafe,Barcelona,2011-11-26,2011/2012
+69336,True,Osasuna,Barcelona,2012-02-11,2011/2012
+69326,True,Sevilla,Barcelona,2012-03-17,2011/2012
+69268,True,Barcelona,Villarreal,2011-08-29,2011/2012
+69320,True,Barcelona,Espanyol,2012-05-05,2011/2012
+69312,True,Espanyol,Barcelona,2012-01-08,2011/2012
+69314,True,Barcelona,Mallorca,2011-10-29,2011/2012
+69318,True,Granada,Barcelona,2011-10-25,2011/2012
+69338,True,Villarreal,Barcelona,2012-01-28,2011/2012
+70220,True,Barcelona,Osasuna,2011-09-17,2011/2012
+70224,True,Rayo Vallecano,Barcelona,2012-04-29,2011/2012
+70221,True,Levante,Barcelona,2012-04-14,2011/2012
+69323,True,Barcelona,Athletic Bilbao,2012-03-31,2011/2012
+69276,True,Barcelona,Atlético Madrid,2011-02-05,2010/2011
+69304,True,Villarreal,Barcelona,2011-04-02,2010/2011
+69307,True,Osasuna,Barcelona,2010-12-04,2010/2011
+69271,True,Barcelona,Osasuna,2011-04-23,2010/2011
+69305,True,Barcelona,Almería,2011-04-09,2010/2011
+69278,True,Barcelona,Málaga,2011-01-16,2010/2011
+69275,True,Espanyol,Barcelona,2010-12-18,2010/2011
+69295,True,Barcelona,Racing Santander,2011-01-22,2010/2011
+69270,True,Getafe,Barcelona,2010-11-07,2010/2011
+69303,True,Barcelona,Getafe,2011-03-19,2010/2011
+69245,True,Real Madrid,Barcelona,2011-04-16,2010/2011
+69287,True,Barcelona,Hércules,2010-09-11,2010/2011
+69296,True,Hércules,Barcelona,2011-01-29,2010/2011
+69260,True,Barcelona,Valencia,2010-10-16,2010/2011
+69269,True,Atlético Madrid,Barcelona,2010-09-19,2010/2011
+69246,True,Real Sociedad,Barcelona,2011-04-30,2010/2011
+69302,True,Barcelona,Real Sociedad,2010-12-12,2010/2011
+69282,True,Barcelona,Athletic Bilbao,2011-02-20,2010/2011
+69274,True,Valencia,Barcelona,2011-03-02,2010/2011
+69283,True,Mallorca,Barcelona,2011-02-26,2010/2011
+69280,True,Deportivo La Coruna,Barcelona,2011-01-08,2010/2011
+69286,True,Racing Santander,Barcelona,2010-08-29,2010/2011
+69291,True,Sevilla,Barcelona,2011-03-13,2010/2011
+69236,True,Barcelona,Mallorca,2010-10-03,2010/2011
+69234,True,Barcelona,Espanyol,2011-05-08,2010/2011
+69272,True,Levante,Barcelona,2011-05-11,2010/2011
+69308,True,Barcelona,Villarreal,2010-11-13,2010/2011
+69299,True,Barcelona,Real Madrid,2010-11-29,2010/2011
+69300,True,Barcelona,Real Zaragoza,2011-03-05,2010/2011
+69289,True,Barcelona,Sevilla,2010-10-30,2010/2011
+69263,True,Real Zaragoza,Barcelona,2010-10-23,2010/2011
+69306,True,Almería,Barcelona,2010-11-20,2010/2011
+69248,True,Sporting Gijón,Barcelona,2011-02-12,2010/2011
+69243,True,Barcelona,Sevilla,2010-01-16,2009/2010
+69241,True,Barcelona,Tenerife,2010-05-04,2009/2010
+69239,True,Sevilla,Barcelona,2010-05-08,2009/2010
+69257,True,Barcelona,Osasuna,2010-03-24,2009/2010
+69253,True,Barcelona,Real Zaragoza,2009-10-25,2009/2010
+69244,True,Villarreal,Barcelona,2010-05-01,2009/2010
+69277,True,Osasuna,Barcelona,2009-10-31,2009/2010
+69229,True,Getafe,Barcelona,2009-09-12,2009/2010
+69219,True,Tenerife,Barcelona,2010-01-10,2009/2010
+69218,True,Deportivo La Coruna,Barcelona,2009-12-05,2009/2010
+69250,True,Barcelona,Mallorca,2009-11-07,2009/2010
+69242,True,Barcelona,Real Valladolid,2010-05-16,2009/2010
+69256,True,Barcelona,Almería,2009-10-03,2009/2010
+69298,True,Mallorca,Barcelona,2010-03-27,2009/2010
+69259,True,Real Madrid,Barcelona,2010-04-10,2009/2010
+69224,True,Barcelona,Valencia,2010-03-14,2009/2010
+69210,True,Real Valladolid,Barcelona,2010-01-23,2009/2010
+69220,True,Sporting Gijón,Barcelona,2010-01-30,2009/2010
+69237,True,Atlético Madrid,Barcelona,2010-02-14,2009/2010
+69226,True,Almería,Barcelona,2010-03-06,2009/2010
+69252,True,Valencia,Barcelona,2009-10-17,2009/2010
+69255,True,Málaga,Barcelona,2009-09-26,2009/2010
+69214,True,Barcelona,Xerez,2010-04-24,2009/2010
+69262,True,Barcelona,Real Madrid,2009-11-29,2009/2010
+69240,True,Barcelona,Getafe,2010-02-06,2009/2010
+69233,True,Barcelona,Racing Santander,2010-02-20,2009/2010
+69213,True,Espanyol,Barcelona,2010-04-17,2009/2010
+69238,True,Barcelona,Málaga,2010-02-27,2009/2010
+69267,True,Xerez,Barcelona,2009-12-02,2009/2010
+69288,True,Athletic Bilbao,Barcelona,2009-11-21,2009/2010
+69254,True,Racing Santander,Barcelona,2009-09-22,2009/2010
+69292,True,Barcelona,Atlético Madrid,2009-09-19,2009/2010
+69227,True,Real Zaragoza,Barcelona,2010-03-21,2009/2010
+69247,True,Barcelona,Athletic Bilbao,2010-04-03,2009/2010
+69221,True,Barcelona,Deportivo La Coruna,2010-04-14,2009/2010
+69225,True,Barcelona,Real Madrid,2008-12-13,2008/2009
+69212,True,Barcelona,Atlético Madrid,2008-10-04,2008/2009
+69235,True,Málaga,Barcelona,2008-11-01,2008/2009
+69232,True,Barcelona,Almería,2008-10-25,2008/2009
+69216,True,Barcelona,Athletic Bilbao,2009-03-07,2008/2009
+69209,True,Racing Santander,Barcelona,2009-02-01,2008/2009
+69231,True,Barcelona,Sporting Gijón,2009-02-08,2008/2009
+69217,True,Barcelona,Villarreal,2009-05-10,2008/2009
+69273,True,Real Valladolid,Barcelona,2009-04-04,2008/2009
+69222,True,Barcelona,Recreativo Huelva,2009-04-11,2008/2009
+69223,True,Getafe,Barcelona,2009-04-18,2008/2009
+69195,True,Real Betis,Barcelona,2009-02-14,2008/2009
+69251,True,Valencia,Barcelona,2009-04-25,2008/2009
+69185,True,Atlético Madrid,Barcelona,2009-03-01,2008/2009
+69142,True,Barcelona,Málaga,2009-03-22,2008/2009
+69139,True,Barcelona,Espanyol,2009-02-21,2008/2009
+69189,True,Barcelona,Numancia,2009-01-24,2008/2009
+69171,True,Sevilla,Barcelona,2008-11-29,2008/2009
+69249,True,Real Madrid,Barcelona,2009-05-02,2008/2009
+69215,True,Barcelona,Racing Santander,2008-09-13,2008/2009
+69138,True,Sporting Gijón,Barcelona,2008-09-21,2008/2009
+69147,True,Numancia,Barcelona,2008-08-31,2008/2009
+69177,True,Almería,Barcelona,2009-03-15,2008/2009
+69207,True,Barcelona,Real Betis,2008-09-24,2008/2009
+69228,True,Villarreal,Barcelona,2008-12-21,2008/2009
+69183,True,Barcelona,Deportivo La Coruna,2009-01-17,2008/2009
+69279,True,Barcelona,Real Valladolid,2008-11-08,2008/2009
+69285,True,Recreativo Huelva,Barcelona,2008-11-16,2008/2009
+69211,True,Espanyol,Barcelona,2008-09-27,2008/2009
+69230,True,Osasuna,Barcelona,2009-01-11,2008/2009
+69149,True,Barcelona,Valencia,2008-12-06,2008/2009
+69151,True,Levante,Barcelona,2007-09-29,2007/2008
+69144,True,Barcelona,Atlético Madrid,2007-10-07,2007/2008
+69169,True,Barcelona,Athletic Bilbao,2007-09-02,2007/2008
+68360,True,Barcelona,Levante,2008-02-24,2007/2008
+69186,True,Real Murcia,Barcelona,2008-05-17,2007/2008
+69180,True,Racing Santander,Barcelona,2007-08-26,2007/2008
+69143,True,Barcelona,Real Zaragoza,2007-09-26,2007/2008
+69181,True,Athletic Bilbao,Barcelona,2008-01-27,2007/2008
+68365,True,Atlético Madrid,Barcelona,2008-03-01,2007/2008
+69178,True,Getafe,Barcelona,2007-11-10,2007/2008
+68364,True,Villarreal,Barcelona,2007-10-20,2007/2008
+69170,True,Barcelona,Deportivo La Coruna,2007-12-09,2007/2008
+68359,True,Barcelona,Espanyol,2008-04-19,2007/2008
+68356,True,Espanyol,Barcelona,2007-12-01,2007/2008
+69158,True,Barcelona,Almería,2007-10-28,2007/2008
+69187,True,Barcelona,Osasuna,2008-02-03,2007/2008
+68363,True,Real Valladolid,Barcelona,2007-11-01,2007/2008
+69166,True,Barcelona,Real Betis,2007-11-04,2007/2008
+68366,True,Barcelona,Mallorca,2008-05-11,2007/2008
+69148,True,Barcelona,Sevilla,2007-09-22,2007/2008
+69184,True,Barcelona,Recreativo Huelva,2007-11-24,2007/2008
+69173,True,Barcelona,Racing Santander,2008-01-20,2007/2008
+69146,True,Sevilla,Barcelona,2008-02-09,2007/2008
+69182,True,Real Zaragoza,Barcelona,2008-02-16,2007/2008
+68358,True,Recreativo Huelva,Barcelona,2008-04-12,2007/2008
+68361,True,Real Madrid,Barcelona,2008-05-07,2007/2008
+69141,True,Barcelona,Valencia,2008-05-04,2007/2008
+69145,True,Valencia,Barcelona,2007-12-15,2007/2008
+69176,True,Atlético Madrid,Barcelona,2007-05-20,2006/2007
+69179,True,Real Zaragoza,Barcelona,2007-04-07,2006/2007
+68334,True,Sevilla,Barcelona,2007-03-03,2006/2007
+68333,True,Barcelona,Athletic Bilbao,2007-02-25,2006/2007
+68336,True,Gimnàstic Tarragona,Barcelona,2007-06-17,2006/2007
+68326,True,Celta Vigo,Barcelona,2006-08-28,2006/2007
+69162,True,Barcelona,Real Betis,2007-05-13,2006/2007
+68335,True,Barcelona,Real Madrid,2007-03-10,2006/2007
+68332,True,Valencia,Barcelona,2007-02-18,2006/2007
+68330,True,Real Madrid,Barcelona,2006-10-22,2006/2007
+68329,True,Barcelona,Sevilla,2006-10-15,2006/2007
+68341,True,Recreativo Huelva,Barcelona,2007-03-17,2006/2007
+69165,True,Barcelona,Espanyol,2007-06-09,2006/2007
+69155,True,Villarreal,Barcelona,2007-04-22,2006/2007
+69154,True,Barcelona,Racing Santander,2007-02-11,2006/2007
+69156,True,Barcelona,Levante,2007-04-29,2006/2007
+69159,True,Barcelona,Mallorca,2007-04-15,2006/2007
+69175,True,Barcelona,Deportivo La Coruna,2007-03-31,2006/2007
+69160,True,Real Sociedad,Barcelona,2007-05-05,2006/2007
+68331,True,Barcelona,Real Zaragoza,2006-11-12,2006/2007
+68328,True,Barcelona,Valencia,2006-09-24,2006/2007
+68340,True,Racing Santander,Barcelona,2006-09-17,2006/2007
+69174,True,Deportivo La Coruna,Barcelona,2006-11-04,2006/2007
+68347,True,Athletic Bilbao,Barcelona,2006-09-30,2006/2007
+68327,True,Barcelona,Osasuna,2006-09-09,2006/2007
+69157,True,Barcelona,Getafe,2007-05-26,2006/2007
+69164,True,Barcelona,Málaga,2005-10-26,2005/2006
+68324,True,Barcelona,Deportivo Alavés,2006-01-22,2005/2006
+68320,True,Villarreal,Barcelona,2005-12-04,2005/2006
+68323,True,Barcelona,Celta Vigo,2005-12-20,2005/2006
+69172,True,Barcelona,Real Betis,2006-02-18,2005/2006
+68339,True,Getafe,Barcelona,2005-11-06,2005/2006
+68348,True,Espanyol,Barcelona,2006-01-07,2005/2006
+68354,True,Barcelona,Racing Santander,2005-11-27,2005/2006
+68351,True,Real Zaragoza,Barcelona,2006-02-25,2005/2006
+68317,True,Barcelona,Real Zaragoza,2005-10-01,2005/2006
+68350,True,Barcelona,Atlético Madrid,2006-02-05,2005/2006
+68325,True,Mallorca,Barcelona,2006-01-29,2005/2006
+68321,True,Barcelona,Sevilla,2005-12-11,2005/2006
+68319,True,Real Madrid,Barcelona,2005-11-19,2005/2006
+68342,True,Barcelona,Athletic Bilbao,2006-01-15,2005/2006
+68322,True,Cádiz,Barcelona,2005-12-17,2005/2006
+68318,True,Barcelona,Osasuna,2005-10-22,2005/2006
+68314,True,Barcelona,Málaga,2004-12-04,2004/2005
+68313,True,Barcelona,Osasuna,2004-10-24,2004/2005
+68316,True,Barcelona,Albacete,2005-05-01,2004/2005
+68315,True,Barcelona,Levante,2004-12-21,2004/2005
+69153,True,Albacete,Barcelona,2004-12-11,2004/2005
+68352,True,Barcelona,Getafe,2005-04-17,2004/2005
+68353,True,Espanyol,Barcelona,2004-10-16,2004/2005

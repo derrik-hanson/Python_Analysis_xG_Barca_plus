@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 10 20:41:12 2021
+
+@author: Derrik Hanson
+"""
+
+import pickle
+import numpy as np 
+import pandas as pd
+
+import DhEventPlotTools as Dhplt
+# ----------------------------
+
+laliga_shots_by_year = pickle.load(open('laliga_data/laliga_shots_df_dict.p', "rb"))
+
+player_name = "Xavier Hernández Creus"
+#player_name = 'Lionel Andrés Messi Cuccittini'
+
+
+# -----------------------------
+
+# get all players from barcelona with shots 
+
+
+shot_names_collector = []
+barca_shots_collector = []
+for year, df in laliga_shots_by_year.items():
+    #A dataframe of shots
+    events_df_in = df
+    shot_mask = events_df_in['type_name'] == 'Shot'
+    shots = events_df_in.loc[shot_mask]#.set_index('id')
+
+    team_mask = events_df_in['team_name'] == 'Barcelona'
+    barca_shots = events_df_in[team_mask]
+    
+    barca_shots_collector.append(barca_shots)
+    shot_names_collector.append(barca_shots['player_name'].to_list())
+
+# ----------------- 
+# create dataframe with just list of names who have shots
+shot_names_list = [p for lt in shot_names_collector for p in lt]
+barca_player_names_shots = set(shot_names_list)
+barca_shooters = pd.DataFrame(barca_player_names_shots, columns=['player_name'])
+
+barca_shooters.to_csv('laliga_data/barca_players_with_shots.csv', index=False)
+
+# ----------------- 
+# create large shots dataframe
+barca_shots_df = pd.concat(barca_shots_collector)
+barca_shots_df.to_csv('laliga_data/barca_shots_df.csv')
+
+# get number of shots
+total_shots_by_player = barca_shots_df.value_counts('player_name').copy()
+total_shots_by_player.rename('total_shots', inplace=True)
+   
+# get goals by player
+goal_mask = barca_shots_df['shot_outcome_name']=='Goal'
+total_goals_by_player = barca_shots_df[goal_mask]
+total_goals_by_player = total_goals_by_player.value_counts('player_name').copy()
+total_goals_by_player.rename('total_goals', inplace=True)
+
+# group by player
+barca_shots_grouped = barca_shots_df.groupby(['player_name']).mean()
+
+barca_shots_xg_by_player = barca_shots_grouped['shot_statsbomb_xg'].copy()
+barca_shots_xg_by_player.sort_values( ascending=False, inplace=True)
+
+result_shots = pd.concat([barca_shots_xg_by_player, total_shots_by_player, total_goals_by_player], axis=1, join='inner')
+
+
+# applying filters to the shots
+min_shots_mask = result_shots['total_shots'] >= 20
+filtered_shots = result_shots[min_shots_mask]
+filtered_shots.sort_values('total_goals', ascending=False, inplace=True)
+
+
+
+
+
+
+

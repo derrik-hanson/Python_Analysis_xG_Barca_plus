@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Nov 11 15:57:54 2021
+
+@author: Derrik Hanson
+"""
+# collect all passes by intended player
+#----------
+## bins
+# define x binsvalues
+# define sub_x, y bins
+#----------
+#sort all passes into above-defined bins using pass origin coordinates
+
+# ? should we include unsuccessful passes too?
+
+# get destination x value for all binned passes
+# get destinattion y value for all binned passes
+
+# us x, y values to calculate quiver arrow length 
+# - bin_arrw_x = (sum_x/total_pass_perbin)
+# - bin_arrw_y = (sum_y/total_pass_perbin)
+
+# us x, y values to calculate quiver 
+# - arcsin(bin_sum_x/bin_sum_y)
+
+
+
+

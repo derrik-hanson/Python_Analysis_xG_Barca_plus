@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov  9 15:17:08 2021
+
+@author: Spade5
+"""
+import json 
+import pandas as pd
+
+comp_id_in = 11
+
+# get laliga seasons data
+with open('laliga_seasons.json') as laliga_file:
+    laliga_seasons = json.load(laliga_file)
+
+seasondf_dict = {}
+#--------------
+# Generate Data frames for match ids with barcelona
+for temp_season_id in laliga_seasons['seasons'].keys():
+ 
+    season_collector = []
+    season_year = laliga_seasons['seasons'][temp_season_id]['year']
+    print('-'*10)
+    print(season_year)
+    
+    # load next events json file
+    with open(f'statsbomby/data/matches/{comp_id_in}/{temp_season_id}.json') as f:
+                temp_matches = json.load(f)
+                
+    for match in temp_matches:
+        print(match['match_id'])
+        file_name=str(match['match_id'])+'.json'
+        with open('statsbomby/data/events/'+file_name) as data_file:
+            #print (mypath+'events/'+file)
+            data = json.load(data_file)
+        
+        # ----------------
+        # get the nested structure into a dataframe 
+        # store the dataframe in a dictionary with the match id as key (remove '.json' from string)
+        from pandas.io.json import json_normalize
+        df = json_normalize(data, sep = "_").assign(match_id = file_name[:-5])
+        
+        #A dataframe of shots
+        shots_df = df.loc[df['type_name'] == 'Shot'].set_index('id')
+
+        # Creates DataFrame.
+        season_collector.append(shots_df)
+    
+    season_df = pd.concat(season_collector)
+        
+        
+    # add this season to the season_dataframe
+    seasondf_dict[season_year] = season_df
+
+# ------------
+# Create one dataframe for all league match data
+seasondf_list = [s for s in seasondf_dict.values()]
+all_matches_df = pd.concat(seasondf_list)
+
+all_matches_df.to_csv('statsbomb_laliga_matches.csv', index=False)
+#all_matches_df.sort_values('match_date', ascending=False)
+
+# Save dataframe to a file for later access
+# all_matches_df.to_csv('all_laliga_summary.zip', index=False)
+
